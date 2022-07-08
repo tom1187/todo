@@ -1,17 +1,16 @@
-# todo
-DevopsExpert - helm exercise
-Helm init:
+# todo DevopsExpert - helm exercise
+###### Helm init:
 curl -L https://git.io/get_helm.sh | bash
 helm init  # setup helm with our cluster
 helm repo update # sync all helm charts info
 
-Helm creation:
+###### Helm creation:
 helm create todochart
 
-Helm deployment:
+###### Helm deployment:
 helm install todochart
 
-Helm museaum:
+###### Helm museum:
 helm package .
 curl https://raw.githubusercontent.com/helm/chartmuseum/main/scripts/get-chartmuseum | bash
 chartmuseum --debug --port=8080 --storage="local" --storage-local-rootdir="./chartstorage"
